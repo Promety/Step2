@@ -29,9 +29,9 @@ When a GitHub Actions workflow is running, you should see some checks in progres
 
 <img alt="checks in progress in a merge box" src=https://user-images.githubusercontent.com/16547949/66080348-ecc5f580-e533-11e9-909e-c213b08790eb.png width=400 />
 
-You can follow along as GitHub Actions runs your job by going to the **Actions** tab or by clicking "Details" in the merge box below.
+You can follow along as GitHub Actions runs your job by going to the __Actions__ tab or by clicking "Details" in the merge box below.
 
-When the tests finish, you'll see a red X :x: or a green check mark :heavy*check*mark: in the merge box. At that point, you can access the logs for the build job and its associated steps.
+When the tests finish, you'll see a red X :x: or a green check mark :heavy_check_mark: in the merge box. At that point, you can access the logs for the build job and its associated steps.
 
 *By looking at the logs, can you identify which tests failed?* To find it, go to one of the failed builds and scroll through the log. Look for a section that lists all the unit tests. We're looking for the name of the test with an "x".
 
@@ -49,7 +49,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
   ```markdown
   *underscore*
   ```
-1. **Commit changes**.
+1. __Commit changes__.
 1. Wait about 20 seconds and then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/actions) will automatically update to the next step.
 
 <footer>
@@ -63,6 +63,6 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 
 Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/test-with-actions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code*of*conduct/code*of*conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 </footer>
