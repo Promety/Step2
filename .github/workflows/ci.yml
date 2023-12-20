@@ -1,4 +1,34 @@
- name: Run markdown lint 
-  run: |
-   npm install remark-cli remark-preset-lint-consistent
-   npx remark . --use remark-preset-lint-consistent --frail
+ # This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+# Triggers the workflow on push or pull request events but only for the "main" branch
+   push:
+     branches: [ "main" ]
+   pull_request:
+     branches: [ "main" ]
+
+
+   workflow_dispatch:
+
+
+jobs:
+# This workflow contains a single job celled "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@vé
+
+     - name: Run markdown lint
+       run: |
+         mpm install remark-cli remark-preset-lint-consistent vfile-reporter-json
+         npx remark . --use remark-preset-lint-consistent --report vfile-reporter-json 2> remark-lint-report.json
+
+ 
+
+     - uses: actions/upload-artifact@v3
+       with:
+         name: remark-Lint-report
+         path: remark-lint-report.json
